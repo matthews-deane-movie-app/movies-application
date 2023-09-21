@@ -1,9 +1,74 @@
 {
-  "movies": [
-    {
-      "id": 1,
-      "title": "Shrek",
-      "rating": 5
-    }
-  ]
+"movies" :[
+{
+"title": "Up",
+"rating": "8.3",
+"genre": ["Animation, Adventure, Comedy"],
+"plot": "As a boy, Carl Fredricksen wanted to explore South America and find the forbidden Paradise Falls. About 64 years later he gets to begin his journey along with Boy Scout Russell by lifting his house with thousands of balloons. On their journey, they make many new friends including a talking dog, and figure out that someone has evil plans. Carl soon realizes that this evildoer is his childhood idol.",
+"poster": "https://m.media-amazon.com/images/M/MV5BMTk3NDE2NzI4NF5BMl5BanBnXkFtZTgwNzE1MzEyMTE@._V1_SX300.jpg",
+"id": "tt1049413"
+},
+{
+"title": "The Dark Knight",
+"rating": "9.0",
+"genre": ["Action, Crime, Drama"],
+"plot": "Set within a year after the events of Batman Begins (2005), Batman, Lieutenant James Gordon, and new District Attorney Harvey Dent successfully begin to round up the criminals that plague Gotham City, until a mysterious and sadistic criminal mastermind known only as \"The Joker\" appears in Gotham, creating a new wave of chaos. Batman's struggle against The Joker becomes deeply personal, forcing him to \"confront everything he believes\" and improve his technology to stop him. A love triangle develops between Bruce Wayne, Dent, and Rachel Dawes.",
+"poster": "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_SX300.jpg",
+"id": "tt0468569"
+},
+{
+"title": "Joker",
+"rating": "8.4",
+"genre": ["Crime, Drama, Thriller"],
+"plot": "Arthur Fleck works as a clown and is an aspiring stand-up comic. He has mental health issues, part of which involves uncontrollable laughter. Times are tough and, due to his issues and occupation, Arthur has an even worse time than most. Over time these issues bear down on him, shaping his actions, making him ultimately take on the persona he is more known as...Joker.",
+"poster": "https://m.media-amazon.com/images/M/MV5BNGVjNWI4ZGUtNzE0MS00YTJmLWE0ZDctN2ZiYTk2YmI3NTYyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg",
+"id": "tt7286456"
+},
+{
+"title": "The Avengers",
+"rating": "8.0",
+"genre": ["Action, Sci-Fi"],
+"plot": "Loki, the adopted brother of Thor, teams-up with the Chitauri Army and uses the Tesseract's power to travel from Asgard to Midgard to plot the invasion of Earth and become a king. The director of the agency S.H.I.E.L.D., Nick Fury, sets in motion project Avengers, joining Tony Stark a.k.a. the Iron Man; Steve Rogers, a.k.a. Captain America; Bruce Banner, a.k.a. The Hulk; Thor; Natasha Romanoff, a.k.a. Black Widow; and Clint Barton, a.k.a. Hawkeye, to save the world from the powerful Loki and the alien invasion.",
+"poster": "https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg",
+"id": "tt0848228"
+},
+
+{
+"title": "The BoonDock Saints",
+"rating": 7.7,
+"genre": ["Action, Crime, Thriller"],
+"plot":"Two Irish brothers accidentally kill mafia thugs. They turn themselves in and are released as heroes. They then see it as a calling by God and start knocking off mafia gang members one by one. Willem Dafoe plays the detective trying to figure out the killings, but the closer he comes to catching the Irish brothers, the more he thinks the brothers are doing the right thing.",
+"id" :1
+},
+
+{
+"title": "The Longest Yard",
+"rating": 7.7,
+"genre": ["Comedy, Crime, Sport"],
+"plot":"Crewe was a revered football superstar back in his day, but that time has since faded. But when a messy drunk driving incident lands him in jail, Paul finds he was specifically requested by Warden Hazen (James Cromwell), a duplicitous prison official well aware of Paul's athletic skills. Paul has been assigned the task of assembling a team of convicts, to square off in a big football game against the sadistic guards. With the help of fellow convict Caretaker, and an old legend named Nate Scarborough to coach, Crewe is ready for what promises to be a very interesting game. It's only the warden and the guards who have no idea who or what they're up against, with Paul the driving force behind the new team.",
+"id" :2
+},
+{
+"title": "Saw",
+"rating":7.6,
+"genre": ["Horror, Mystery, Thriller"],
+"plot":"Waking up in a bathroom, two men, Adam and Dr. Lawrence Gordon, discover they have been captured by the infamous Jigsaw Killer. The men must escape before time runs out, otherwise, they will face the deadly consequences.",
+"id" :3
+
+},
+{
+"title": "The Hurt Locker",
+"rating": 7.5,
+"genre" : ["Drama, Thriller, War"],
+"plot" : "n intense portrayal of elite soldiers who have one of the most dangerous jobs in the world: disarming bombs in the heat of combat. When a new sergeant, James, takes over a highly trained bomb disposal team amidst violent conflict, he surprises his two subordinates, Sanborn and Eldridge, by recklessly plunging them into a deadly game of urban combat, behaving as if he's indifferent to death. As the men struggle to control their wild new leader, the city explodes into chaos, and James' true character reveals itself in a way that will change each man forever.",
+"id" :4
+},
+{
+"title" :"Secondhand Lions",
+"rating" : 7.5,
+"gerne" : ["Comedy, Drama, Family"],
+"plot" : "A boy named Walter is dropped by his mother Mae at his great-uncles' house. Later, Walter will find out his great-uncles' big secret, and rumors say that Hub and Garth, Walter's great-uncles, have stolen a lot of gold and money. (some say they stole it from Al Capone) Did they really steal that money or not?",
+"id" :5
+}
+]
 }

@@ -78,5 +78,6 @@ $('#omdb-btn').on("click", function (e) {
     //console.log(omdbUserInput)
     movieSearch(omdbUserInput)
 
-    }
+
+
 });
