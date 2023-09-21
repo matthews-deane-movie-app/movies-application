@@ -1,13 +1,46 @@
-let movieAPI = "movies.json";
+let movieAPI = "../data/movies.json";
 
 
+//Generates Movies on Load
+function getMovies() {
+    return fetch(movieAPI)
+        .then((response) =>
+            response.json());
+}
+
+getMovies().then((movies) => {
+
+    $('#loader').css('display', 'none');
+
+    console.log(movies)
+
+    //loops through the cards
+    movies.forEach((movie) => {
+
+        $('#movies-div').append(
+
+            `<div class="card col-md-4 flip-card" id="${movie.id}">
+            <div class="flip-card-inner">
+
+            <div class="flip-card-front">
+            <img class="card-img-top" src="${movie.poster}">
+            </div>
+
+            <div class="flip-card-back">
+            <h3 class="card-title">${movie.title}</h3>
+            <h6 class="card-text">${movie.genre}</h6>
+             <div class="card-body">
+            <p class="card-text">${movie.plot}</p>
+            <p class="card-text">Rating: ${movie.rating}</p>
+
+
+<!--Pulls from API OMDB-->
 function movieSearch(movieName) {
     const url = `http://www.omdbapi.com/?i=tt3896198&apikey=5a824055&t=${movieName}&plot=full`;
     // console.log(url);
     const options = {
         method: 'GET',
     };
-
 
     fetch(url, options)
         .then(response => response.json())
@@ -53,7 +86,8 @@ function movieSearch(movieName) {
                             data-movie-genre="${data.Plot}"
                             data-movie-description="${data.Plot}"
                             data-movie-poster="${data.Poster}"
-                            >Edit Movie</button>
+                            >Edit Movie
+                        </button>
                             <button type="button" class="btn btn-primary" data-movie-id="${data.imdbid}">Delete></button>
 
                     </div>
@@ -62,22 +96,19 @@ function movieSearch(movieName) {
 
                 </div>
              </div>`)
+            // functions needed to be added for edit and delete
+            editButton();
 
-
-            editButton(); //Calls editButton function (lines 293-306)
-
-            deleteButton(); //Calls deleteButton function (lines 325-336)
+            deleteButton();
 
         })
 
 }
 
-$('#omdb-btn').on("click", function (e) {
-    e.preventDefault()
-    let omdbUserInput = $('#site-search').val()
-    //console.log(omdbUserInput)
-    movieSearch(omdbUserInput)
-
-
+    $('#omdb-btn').on("click", function (e) {
+        e.preventDefault()
+        let omdbUserInput = $('#site-search').val()
+        //console.log(omdbUserInput)
+        movieSearch(omdbUserInput)
 
 });

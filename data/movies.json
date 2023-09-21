@@ -8,6 +8,7 @@
 "poster": "https://m.media-amazon.com/images/M/MV5BMTk3NDE2NzI4NF5BMl5BanBnXkFtZTgwNzE1MzEyMTE@._V1_SX300.jpg",
 "id": "tt1049413"
 },
+
 {
 "title": "The Dark Knight",
 "rating": "9.0",
@@ -16,6 +17,7 @@
 "poster": "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_SX300.jpg",
 "id": "tt0468569"
 },
+
 {
 "title": "Joker",
 "rating": "8.4",
@@ -24,6 +26,7 @@
 "poster": "https://m.media-amazon.com/images/M/MV5BNGVjNWI4ZGUtNzE0MS00YTJmLWE0ZDctN2ZiYTk2YmI3NTYyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg",
 "id": "tt7286456"
 },
+
 {
 "title": "The Avengers",
 "rating": "8.0",
@@ -48,6 +51,7 @@
 "plot":"Crewe was a revered football superstar back in his day, but that time has since faded. But when a messy drunk driving incident lands him in jail, Paul finds he was specifically requested by Warden Hazen (James Cromwell), a duplicitous prison official well aware of Paul's athletic skills. Paul has been assigned the task of assembling a team of convicts, to square off in a big football game against the sadistic guards. With the help of fellow convict Caretaker, and an old legend named Nate Scarborough to coach, Crewe is ready for what promises to be a very interesting game. It's only the warden and the guards who have no idea who or what they're up against, with Paul the driving force behind the new team.",
 "id" :2
 },
+
 {
 "title": "Saw",
 "rating":7.6,
@@ -56,6 +60,7 @@
 "id" :3
 
 },
+
 {
 "title": "The Hurt Locker",
 "rating": 7.5,
@@ -63,10 +68,11 @@
 "plot" : "n intense portrayal of elite soldiers who have one of the most dangerous jobs in the world: disarming bombs in the heat of combat. When a new sergeant, James, takes over a highly trained bomb disposal team amidst violent conflict, he surprises his two subordinates, Sanborn and Eldridge, by recklessly plunging them into a deadly game of urban combat, behaving as if he's indifferent to death. As the men struggle to control their wild new leader, the city explodes into chaos, and James' true character reveals itself in a way that will change each man forever.",
 "id" :4
 },
+
 {
 "title" :"Secondhand Lions",
 "rating" : 7.5,
-"gerne" : ["Comedy, Drama, Family"],
+"genre" : ["Comedy, Drama, Family"],
 "plot" : "A boy named Walter is dropped by his mother Mae at his great-uncles' house. Later, Walter will find out his great-uncles' big secret, and rumors say that Hub and Garth, Walter's great-uncles, have stolen a lot of gold and money. (some say they stole it from Al Capone) Did they really steal that money or not?",
 "id" :5
 }
