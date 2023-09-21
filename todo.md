@@ -1,7 +1,7 @@
 //TODO: When page loads
 Display a "loading..." message
 
-Make an AJAX request to get a listing of all the movies
+------Make an AJAX request to get a listing of all the movies
 
 //TODO:Add a movie
 Create a form for adding a new movie that has fields for the movie's title and rating
@@ -27,10 +27,10 @@ ext that says "loading...".
 
 Use modals for creating and editing movie forms.
 
-Add a genre property to every movie.
+Complete----Add a genre property to every movie.
 
 Allow users to sort the movies by rating, title, or genre (if you have it).
 
 Allow users to search through the movies by rating, title, or genre (if you have it).
 
-Use a free movie API like OMDB to include extra info or render movie posters.
+Complete----Use a free movie API like OMDB to include extra info or render movie posters.
