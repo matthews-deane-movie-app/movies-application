@@ -1,119 +1,64 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Movie App</title>
+    <link rel="stylesheet" href="./css/movies.css">
+    <script src="https://kit.fontawesome.com/d33e65fc6a.js" crossorigin="anonymous"></script>
+
     <title>Movie Project</title>
 <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
 <!--    <link rel="stylesheet" href="./css/movies.css">-->
+
 </head>
 <body>
+<div id="loading">
+    <img src="./img/200w.gif">
+</div>
 
-<div id="page-wrapper">
-    <header class="title-section">
-        <h1 class="title border-img"><img class="" src="#">Movie Application<img class="" src="#">Docs Cinema's<img class="film" src="#"></h1>
-    </header>
+<!--<div id="loading" style="padding-top:66.667%;position:relative;"><iframe src="https://gifer.com/embed/XWfQ" width="100%" height="100%" style='position:absolute;top:0;left:0;' frameBorder="0" allowFullScreen></iframe></div><p><a href="https://gifer.com"></a></p>-->
+<!--</div>-->
+<div class="page-wrapper">
+    <nav>
+        <h1>Doc's Netflix and Chill</h1>
+    </nav>
 
-    <div class=""></div>
 
-    <section class="">
-
-        <div id="loader" class="center"></div>
-
-        <h2 class="add-movie-title"><img class="" src="">Whats you Favorite Movie? Add Here!<img class="" src=""> </h2>
-
-        <div class="row">
-
-            <form id="add-movie-form">
-
-                <label for="movie-title-custom" class="mini-title">Movie Title:</label>
-                <br>
-                <input type="text" id="movie-title-custom" size="50" placeholder="Title">
-
-                <br>
-                <label for="movie-rating-custom" class="mini-title">Movie Rating:</label>
-                <br>
-                <input type="text" id="movie-rating-custom" size="50" placeholder="Rating: 1-10">
-
-                <br>
-                <label for="movie-genre-custom" class="mini-title">Movie Genre:</label>
-                <br>
-                <input type="text" id="movie-genre-custom" size="50" placeholder="Action, Suspense, Etc...">
-
-                <br>
-                <label for="movie-description-custom" class="mini-title">Description:</label>
-                <br>
-                <input type="text" id="movie-description-custom" size="50" placeholder="Movie Plot">
-
-                <label for="url" class="mini-title">Poster (Image URL):</label>
-                <br>
-                <input type="url" name="url" id="url" size="50" placeholder="Image Location">
-
-                <button type="button" class="btn btn-primary" id="add-movie" >Add Movie</button>
-
-            </form>
-
-            <form>
-
-                <label for="site-search" class="mini-title data-search">Search our Database:</label><img class="" src="">
-
-                <br>
-                <input type="text" id="site-search" name="q" size="50" placeholder="Search for a movie by title">
-                <br>
-                <br>
-                <button id="omdb-btn" class="btn btn-primary">Search</button>
-            </form>
-
-        </div>
-
-        <br>
-
-        <h3 class="">My Favorite Movies</h3>
-
-        <div class=""></div>
-
-        <!-- The Modal -->
-        <div id="modal" class="modal">
-
+    <p id="movieCount"></p>
+    <div id="mainContainer">
+        <div id="movies"></div>
+        <br><br>
+        <div id="editModal" class="modal">
             <div class="modal-content">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <h3>Edit a movie!</h3>
-                    <div class="form-group">
-                        <form>
-                            <div class="hide">
-                                <label for="movie-id">Movie ID:</label>
-                                <br>
-                                <input type="text" class="input-large search-query" id="movie-id" size="50">
-                            </div>
-                            <br>
-                            <label for="movie-title-new">Title:</label>
-                            <br>
-                            <input type="text" id="movie-title-new" size="50">
-                            <br>
-                            <label for="movie-rating-new">Rating:</label>
-                            <br>
-                            <input type="text" id="movie-rating-new" size="50">
-                            <br>
-                            <label for="movie-genre-new">Genre:</label>
-                            <br>
-                            <input type="text" id="movie-genre-new" size="50">
-                            <br>
-                            <label for="movie-description-new">Description:</label>
-                            <br>
-                            <input type="text" id="movie-description-new" size="50">
-                            <br>
-                            <label for="movie-image-new">Poster (Image URL):</label>
-                            <br>
-                            <input type="text" id="movie-image-new" size="50">
-                            <br>
-                            <button type="button" class="btn btn-primary" id="submit" >Submit</button>
-                        </form>
-                    </div>
-
-                </div>
+                <h2>Edit Movie</h2>
+                <label for="newTitle">Movie Title</label>
+                <input type="text" id="newTitle" placeholder="New title">
+                <label for="newRating">Movie Rating</label>
+                <select id="newRating">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                <label for="newGenre">Movie Genre</label>
+                <select id="newGenre">
+                    <option>Action & Adventure</option>
+                    <option>Kids & Family</option>
+                    <option>Drama</option>
+                    <option>Comedy</option>
+                    <option>Suspense checked</option>
+                </select>
+                <br><br>
+                <button id="submitEdit">Submit</button>
+                <button id="cancelEdit">Cancel</button>
             </div>
-
         </div>
+       
 
         <div class="row movies-display" id="movies-div"></div>
 
@@ -127,6 +72,8 @@
     <script src="./js/keys.js"></script>
     <script src="./js/movies.js"></script>
     <script type="module" src="./js/index.js"></script>
+
 </div>
+<script src="./js/movies.js"></script>
 </body>
 </html>
