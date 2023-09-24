@@ -2,18 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Movie App</title>
     <link rel="stylesheet" href="./css/movies.css">
     <script src="https://kit.fontawesome.com/d33e65fc6a.js" crossorigin="anonymous"></script>
-
-    <title>Movie Project</title>
-<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
-<!--    <link rel="stylesheet" href="./css/movies.css">-->
-
 </head>
 <body>
 <div id="loading">
@@ -51,28 +45,38 @@
                     <option>Kids & Family</option>
                     <option>Drama</option>
                     <option>Comedy</option>
-                    <option>Suspense checked</option>
+                    <option>Suspense</option>
                 </select>
                 <br><br>
                 <button id="submitEdit">Submit</button>
                 <button id="cancelEdit">Cancel</button>
             </div>
         </div>
-       
-
-        <div class="row movies-display" id="movies-div"></div>
-
-
-    </section>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="./js/keys.js"></script>
-    <script src="./js/movies.js"></script>
-    <script type="module" src="./js/index.js"></script>
-
+        <div id="addMovieContainer">
+            <form id="addMovie">
+                <h2>Add New Movie</h2>
+                <label for="movieTitle">Movie Title</label>
+                <input id="movieTitle" placeholder="Add New Movie">
+                <label for="movieRating">Movie Rating</label>
+                <select id="movieRating">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                <label for="movieGenre">Movie Genre</label>
+                <select id="movieGenre">
+                    <option>Kids & Family</option>
+                    <option>Action & Adventure</option>
+                    <option>Drama</option>
+                    <option>Comedy</option>
+                    <option>Suspense</option>
+                </select><br><br>
+                <button id="addMovieButton">Add Movie</button>
+            </form>
+        </div>
+    </div>
 </div>
 <script src="./js/movies.js"></script>
 </body>

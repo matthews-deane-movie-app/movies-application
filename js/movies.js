@@ -1,8 +1,7 @@
 
-
 'use strict';
 
-    // Code executed after HTML is full loaded.
+// Code executed after HTML is full loaded.
 document.addEventListener('DOMContentLoaded', function () {
     let titleArr = [];
     let ratingArr = [];
@@ -43,10 +42,10 @@ document.addEventListener('DOMContentLoaded', function () {
             updateMovieCount();
             document.getElementById('loading').style.display = 'none';
             document.getElementById('addMovieContainer').style.display = 'block';
-            } catch (error) {
+        } catch (error) {
             console.error(error);
-            }
         }
+    }
 
     // Function retrieves movie data from form inputs and return as an object
     function addMovie() {
@@ -87,29 +86,29 @@ document.addEventListener('DOMContentLoaded', function () {
                 try {
                     await fetch(`http://localhost:3000/movies/${movieId}`, {
                         method: 'PUT',
-                            headers: {
-                        'Content-Type': 'application/json',
-                    },
-                body: JSON.stringify({ title: newTitle, rating: newRating, genre: newGenre }),
-                });
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({ title: newTitle, rating: newRating, genre: newGenre }),
+                    });
 
-                movieCard.querySelector('.movieTitle').textContent = newTitle;
-                movieCard.querySelector('.movieRating').innerHTML = `${newRating}  <i class="fa-solid fa-star fa-2xl" style="color: #004C5B;"></i>`;
-                movieCard.querySelector('.movieGenre').textContent = newGenre;
+                    movieCard.querySelector('.movieTitle').textContent = newTitle;
+                    movieCard.querySelector('.movieRating').innerHTML = `${newRating}  <i class="fa-solid fa-star fa-2xl" style="color: #004C5B;"></i>`;
+                    movieCard.querySelector('.movieGenre').textContent = newGenre;
                 } catch (error) {
                     console.error(error);
                 }
             }
 
-editModal.style.display = 'none';
-document.getElementById('addMovieContainer').style.display = 'block';
-});
+            editModal.style.display = 'none';
+            document.getElementById('addMovieContainer').style.display = 'block';
+        });
 
-document.getElementById('cancelEdit').addEventListener('click', function () {
-    editModal.style.display = 'none';
-    document.getElementById('addMovieContainer').style.display = 'block';
-});
-}
+        document.getElementById('cancelEdit').addEventListener('click', function () {
+            editModal.style.display = 'none';
+            document.getElementById('addMovieContainer').style.display = 'block';
+        });
+    }
 
     // Function used to delete a movie from the server and remove it from the DOM.
     // Function deletes a movie when the "Delete" function is clicked and confirms the delete with a prompt that also updates the movie count.
