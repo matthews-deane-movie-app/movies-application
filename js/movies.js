@@ -24,12 +24,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
             data.forEach(function (element) {
                 const movieCard = `
-                <div id="${element.id}" class="movieCard">
+                <div id="${element.id}" class="movieCard"><img src="../img/pic-collage.jpeg" class="default-back" alt="default-background">
                 <h2 class="movieTitle">${element.title}</h2>
                 <p class="movieGenre">${element.genre}</p>
                 <p class="movieRating">${element.rating} <i class="fa-solid fa-star fa-2xl" style="color: #004C5B;"></i></p>
-                <button class="editButton">Edit</button>
-                <button class="deleteButton">Delete</button>
+                <button id="" class="editButton btn-refresh">Edit</button>
+                <button id="" class="deleteButton btn-refresh">Delete</button>
                 </div>`;
                 document.getElementById('movies').insertAdjacentHTML('beforeend', movieCard);
 
@@ -45,7 +45,9 @@ document.addEventListener('DOMContentLoaded', function () {
         } catch (error) {
             console.error(error);
         }
+
     }
+
 
     // Function retrieves movie data from form inputs and return as an object
     function addMovie() {
@@ -135,7 +137,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // Initial fetch and setup to load and display exisating movies.
+    // Initial fetch and setup to load and display existing movies.
     fetchMovies();
 
     document.getElementById('addMovieButton').addEventListener('click', async function (e) {
@@ -152,6 +154,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             const movieCard = `
                     <div id="${data.id}" class="movieCard">
+                    <img src="../img/pic-collage.jpeg" class="default-back" alt="default-background">
                         <h2 class="movieTitle">${data.title}</h2>
                         <p class="movieGenre">${data.genre}</p>
                         <p class="movieRating">${data.rating} <i class="fa-solid fa-star fa-2xl" style="color: #004C5B;"></i></p>
@@ -174,10 +177,15 @@ document.addEventListener('DOMContentLoaded', function () {
         const target = e.target;
         if (target.classList.contains('editButton')) {
             e.preventDefault();
+            // Closest method returns itself or matching ancestor. if no element exist return null
             displayEditModal(target.closest('.movieCard'));
         } else if (target.classList.contains('deleteButton')) {
             e.preventDefault();
             deleteMovie(target.closest('.movieCard'));
         }
     });
+});
+
+document.getElementById("btn-refresh").addEventListener("click", function () {
+    location.reload();
 });

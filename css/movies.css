@@ -52,7 +52,7 @@
 }
 html {
     /*background-image: linear-gradient(60deg, #cbdbde, #89c4ce, #17beda, #3b909f, #28575F, #1098ad, #07b39b, #6fba82);*/
-    background: linear-gradient(300deg,deepskyblue,darkviolet,blue);
+    background: linear-gradient(300deg, #3a3ace, #a91128, #0707ee);
     background-size: 180% 180%;
     animation: gradient-animation 3s ease infinite;
 
@@ -62,7 +62,7 @@ html {
     /*background-repeat: no-repeat;*/
     /*background-size: cover;*/
     height: 100%;
-    font-family: 'Audiowide', cursive;
+    font-family: 'sans-serif', cursive;
 }
 
 #movies {
@@ -83,7 +83,7 @@ html {
     margin: 15px 30px;
     padding: 15px;
     background-color: rgba(255,255,255,0.75);
-    box-shadow: 4px 4px 8px #004C5B;
+    box-shadow: 4px 4px 10px #004C5B;
     transition: all ease-in-out;
     white-space: nowrap;
     overflow: auto;
@@ -166,8 +166,12 @@ html {
 
 #addMovieContainer h2, #editModal h2 {
     font-size: 50px;
+    /*margin-top: 40px;*/
 }
 
+#addMovieContainer h2 {
+    margin-top: 25px;
+}
 nav {
     text-align: center;
     margin: 0;
@@ -227,4 +231,36 @@ select#newGenre {
 }
 input#movieTitle {
     font-size: 1.5em;
+}
+/*// All new updtaes to main*/
+.default-back {
+    width: 250px;
+    height: 250px;
+
+}
+
+h2 {
+    margin-top: 0px;
+}
+
+button#submitEdit, #cancelEdit, #addMovieButton{
+    font-size: 20px;
+}
+/*button#cancelEdit {*/
+/*    font-size: 20px;*/
+/*}*/
+/*button#addMovieButton {*/
+/*    font-size: 20px;*/
+/*}*/
+
+label {
+    font-size: 18px;
+}
+
+button#submitEdit, #addMovieButton {
+    background-color: cornflowerblue;
+}
+
+.giphy-embed {
+    margin-top: 20px;
 }

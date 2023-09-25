@@ -1,28 +1,10 @@
 {
   "movies": [
     {
-      "title": "John Wick 3",
-      "rating": "4",
+      "title": "Friday the 13th",
+      "rating": "5",
       "genre": "Action & Adventure",
       "id": 4
-    },
-    {
-      "title": "Sonic",
-      "rating": "5",
-      "genre": "Kids & Family",
-      "id": 8
-    },
-    {
-      "title": "Godzilla",
-      "rating": "3",
-      "genre": "Kids & Family",
-      "id": 9
-    },
-    {
-      "title": "Infinity war",
-      "rating": "5",
-      "genre": "Suspense checked",
-      "id": 10
     },
     {
       "title": "Avatar",
@@ -31,10 +13,64 @@
       "id": 11
     },
     {
-      "title": "Die Hart",
+      "title": "Bambi",
       "rating": "4",
+      "genre": "Kids & Family",
+      "id": 13
+    },
+    {
+      "title": "UP",
+      "rating": "5",
+      "genre": "Kids & Family",
+      "id": 14
+    },
+    {
+      "title": "The Nun",
+      "rating": "5",
+      "genre": "Suspense",
+      "id": 15
+    },
+    {
+      "title": "Dune",
+      "rating": "5",
+      "genre": "Suspense",
+      "id": 16
+    },
+    {
+      "title": "Deadpool",
+      "rating": "5",
+      "genre": "Action & Adventure",
+      "id": 17
+    },
+    {
+      "title": "Transformers",
+      "rating": "5",
+      "genre": "Suspense",
+      "id": 18
+    },
+    {
+      "title": "Spiderman 2",
+      "rating": "3",
+      "genre": "Action & Adventure",
+      "id": 19
+    },
+    {
+      "title": "Batman Returns",
+      "rating": "",
       "genre": "Comedy",
-      "id": 12
+      "id": 20
+    },
+    {
+      "title": "Batman Begins",
+      "rating": "5",
+      "genre": "Drama",
+      "id": 21
+    },
+    {
+      "title": "The Lost City",
+      "rating": "",
+      "genre": "Kids & Family",
+      "id": 22
     }
   ]
 }
