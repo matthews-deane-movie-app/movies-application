@@ -59,6 +59,18 @@
       "rating": "",
       "genre": "Comedy",
       "id": 20
+    },
+    {
+      "title": "Batman Begins",
+      "rating": "5",
+      "genre": "Drama",
+      "id": 21
+    },
+    {
+      "title": "The Lost City",
+      "rating": "",
+      "genre": "Kids & Family",
+      "id": 22
     }
   ]
 }
