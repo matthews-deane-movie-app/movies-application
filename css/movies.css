@@ -1,4 +1,7 @@
-*{padding:0;margin:0;}
+* {
+    padding:0;
+    margin:0;
+}
 
 #loading {
     background: white;
@@ -9,20 +12,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /*max-width: 100%;*/
-    /*animation: spin 3s linear infinite;*/
-    /*animation-duration: 5s;*/
-    /*background-size: cover;*/
-    /*background-position: center;*/
-    /*background-repeat: no-repeat;*/
-
 }
 
-
 @keyframes flicker {
-
     0%, 18%, 22%, 25%, 53%, 57%, 100% {
-
         text-shadow:
                 0 0 4px #fff,
                 0 0 11px #fff,
@@ -32,7 +25,6 @@
                 0 0 90px #004C5B,
                 0 0 100px #004C5B,
                 0 0 190px #004C5B;
-
     }
 
     20%, 24%, 55% {
@@ -50,17 +42,11 @@
         background-position: 0% 50%;
     }
 }
+
 html {
-    /*background-image: linear-gradient(60deg, #cbdbde, #89c4ce, #17beda, #3b909f, #28575F, #1098ad, #07b39b, #6fba82);*/
     background: linear-gradient(300deg, #3a3ace, #a91128, #0707ee);
     background-size: 180% 180%;
     animation: gradient-animation 3s ease infinite;
-
-    /*animation: gradient-animation  10s ease infinite;*/
-    /*background-image: url("img/wallpaperflare.com_wallpaper.jpg");*/
-    /*background-position: center;*/
-    /*background-repeat: no-repeat;*/
-    /*background-size: cover;*/
     height: 100%;
     font-family: 'sans-serif', cursive;
 }
@@ -83,7 +69,7 @@ html {
     margin: 15px 30px;
     padding: 15px;
     background-color: rgba(255,255,255,0.75);
-    box-shadow: 4px 4px 10px #004C5B;
+    box-shadow: 10px 10px 15px #004C5B;
     transition: all ease-in-out;
     white-space: nowrap;
     overflow: auto;
@@ -99,33 +85,18 @@ html {
 }
 
 .editButton {
-    background-color: cornflowerblue;
+    background-color: #3a3ace;
     color: white;
     border-radius: 5px;
     margin-right: 15px;
 }
 
 .deleteButton {
-    background-color: cornflowerblue;
+    background-color: #3a3ace;
     border-radius: 5px;
     color: white
 }
 
-/*#loading {*/
-/*    position: fixed;*/
-/*    top: 0;*/
-/*    left: 0;*/
-/*    width: 100%;*/
-/*    height: 100%;*/
-/*    !*background: linear-gradient(60deg, #cbdbde, #89c4ce, #17beda, #3b909f, #28575F, #1098ad, #07b39b, #6fba82);*!*/
-/*    z-index: 9999;*/
-/*}*/
-/*#loading img {*/
-/*    position: absolute;*/
-/*    top: 50%;*/
-/*    left: 50%;*/
-/*    transform: translate(-50%, -50%);*/
-/*}*/
 #content {
     display: none;
 }
@@ -142,11 +113,9 @@ html {
     text-align: center;
     padding: 15px;
     background-color: rgba(255,255,255,0.75);
-    box-shadow: 4px 4px 8px #28575F;
+    box-shadow: 10px 10px 15px #004C5B;
     margin: 0 50px;
 }
-
-
 
 #addMovieContainer h3,
 #addMovieContainer label, #editModal label {
@@ -166,17 +135,16 @@ html {
 
 #addMovieContainer h2, #editModal h2 {
     font-size: 50px;
-    /*margin-top: 40px;*/
 }
 
 #addMovieContainer h2 {
     margin-top: 25px;
 }
+
 nav {
     text-align: center;
     margin: 0;
 }
-
 
 h1 {
     font-size: 85px;
@@ -213,7 +181,6 @@ input, select {
     border-radius: 5px;
 }
 
-
 #movieGenre {
     font-size: 1.5em;
 }
@@ -229,10 +196,11 @@ input#newTitle {
 select#newGenre {
     font-size: 1.5em;
 }
+
 input#movieTitle {
     font-size: 1.5em;
 }
-/*// All new updtaes to main*/
+
 .default-back {
     width: 250px;
     height: 250px;
@@ -245,20 +213,16 @@ h2 {
 
 button#submitEdit, #cancelEdit, #addMovieButton{
     font-size: 20px;
+    color: white;
 }
-/*button#cancelEdit {*/
-/*    font-size: 20px;*/
-/*}*/
-/*button#addMovieButton {*/
-/*    font-size: 20px;*/
-/*}*/
 
 label {
     font-size: 18px;
 }
 
 button#submitEdit, #addMovieButton {
-    background-color: cornflowerblue;
+    background-color: #3a3ace;
+    color: white;
 }
 
 .giphy-embed {

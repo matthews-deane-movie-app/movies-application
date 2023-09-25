@@ -1,7 +1,7 @@
 
 'use strict';
 
-// Code executed after HTML is full loaded.
+    // Code executed after HTML is full loaded.
 document.addEventListener('DOMContentLoaded', function () {
     let titleArr = [];
     let ratingArr = [];
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
 
-    // Function retrieves movie data from form inputs and return as an object
+    // Function retrieves movie data from form inputs and return as an object with properties title rating and genre.
     function addMovie() {
         const title = document.getElementById('movieTitle').value;
         const rating = document.getElementById('movieRating').value;
@@ -58,14 +58,14 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
 
-    // Function clears the input fields in the "Add Movie" form.
+    // Function clears the input fields in the "Add Movie" form by setting their values  to empty strings.
     function resetAddMovieForm() {
         document.getElementById('movieTitle').value = '';
         document.getElementById('movieRating').value = '';
         document.getElementById('movieGenre').value = '';
     }
 
-    // Function to display modal for editing movie details when the "Edit" button is clicked and updates the modal with existing movie data
+    // Function to display modal for editing movie details when the "Edit" button is clicked and updates the modal with existing movie data and attaches event listeners to edits and cancel the edit.
     function displayEditModal(movieCard) {
         const movieId = parseInt(movieCard.id);
         const title = movieCard.querySelector('.movieTitle').textContent;
@@ -112,8 +112,8 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // Function used to delete a movie from the server and remove it from the DOM.
-    // Function deletes a movie when the "Delete" function is clicked and confirms the delete with a prompt that also updates the movie count.
+    // Async Function used to delete a movie from the server and remove it from the DOM.
+    // Function deletes a movie when the "Delete" function is clicked and confirms the delete with a prompt and updates the movie count when successful.
     async function deleteMovie(movieCard) {
         const movieId = parseInt(movieCard.id);
         const shouldDelete = confirm('Are you sure you want to delete this movie?');
