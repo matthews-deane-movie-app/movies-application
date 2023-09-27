@@ -145,6 +145,8 @@
     // Inserts the newly created movie card at the end of the container
     // Updates local arrays, movie count and clears input fields using the resetAddForm function.
 
+    // These event listeners handle the addition of new movies and user interactions with existing movie cards (editing and deleting) in the web application and they make asynchronous requests to the server, and update the DOM.
+
     document.getElementById('addMovieButton').addEventListener('click', async function (e) {
         e.preventDefault();
         try {
@@ -176,8 +178,6 @@
             console.error(error);
         }
     });
-
-    //Checks if button clicked is edit or delete. If edit calls the displayEditModal function and pass the closest ancestor if delete passes the deleteMovie function and passing the closest ancestor both with class moviecard.
 
     document.getElementById('movies').addEventListener('click', function (e) {
         const target = e.target;
